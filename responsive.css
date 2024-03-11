@@ -1,0 +1,12 @@
+@media(max-width: 1120px)
+{
+    .s-container{
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+    }
+
+    .second-con,.forth-con{
+        flex-direction: column-reverse;
+    }
+}

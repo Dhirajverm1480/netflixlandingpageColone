@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #000000bf;
+    --tx-color: #fff;
+    --main-color: rgb(29, 29, 29);
+    --bg2-color: #333333;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+header{
+    padding: 0 6%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 5px 5%;
+}
+
+#logo{
+    margin-right: auto;
+}
+
+#lang{
+    border: 1px solid #fff;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 1.1rem;
+    width: 100px;
+    height: 30px;
+    margin: 30px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btnS{
+    border: 1px solid #fff;
+    color: #fff;
+    background: red;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.1rem;
+    width: 100px;
+    height: 30px;
+    margin: 30px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-main{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.5;
+    padding: 10% 0;
+}
+
+.header-main h1{
+    font-size: 2.1rem;
+}
+
+.header-main h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.log input{
+    width: 350px;
+    height: 50px;
+    border: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    outline: none;
+    padding: 1px 15px;
+    border-radius: 5px;
+}
+
+.log input::placeholder{
+    font-size: 1.1rem;
+}
+
+
+.log button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.0rem;
+    background-color: red;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main container */
+
+main{
+    background: rgb(50, 49, 49);
+}
+
+section{
+    padding: 0 6%;
+    margin: 5px 0;
+    background: black;
+    color: #fff;
+}
+
+.s-container{
+    display: flex;
+    align-items: center;
+}
+
+.s-container .text-content{
+    line-height: 2;
+}
+
+.s-container .text-content h1{
+    font-size: 2.3rem;
+}
+
+/* FAQ section */
+
+.fa-container{
+    text-align: center;
+    height: 100%;
+    padding: 40px 10px;
+}
+.fa-container h1{
+    font-size: 2.6rem;
+}
+
+.fa-container .Question-box{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.fa-container .Question-box li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.fa-container .Question-box li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(50, 49, 49);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-container .Question-box li label::after{
+    content: '+';
+    font-size: 2.3rem;
+    position: absolute;
+    right: 20px;
+    transition: transforn 0.5s;
+}
+
+.fa-container .Question-box input[type="radio"]{
+    display: none;
+}
+
+.fa-container .Question-box .ans{
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    padding: 0 20px;
+    background: rgb(50, 49, 49);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.fa-container .Question-box input[type="radio"]:checked + label + .ans{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.fa-container .Question-box input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.fa-container h3{
+    margin: 30px 10px;
+    font-size: 1.4rem;
+}
+
+.fa-container .log-con{
+    margin: 10px 10px 40px;
+    padding: 10px 15px;
+}
+
+.fa-container input{
+    background: var(--main-color);
+}
+
+.line{
+    background: var(--main-color);
+    height: 5px;
+    width: 100%;
+}
+
+/* footer section */
+
+footer{
+    width: 100%;
+    padding: 0 6%;
+    height: 40vh;
+}
+
+footer h2{
+    margin: 20px 25px;
+    font-size: 1.1rem;
+}
+
+footer a{
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-container .footer-box{
+    margin: 1px 10px;
+    padding: 10px 10px;
+}
+
+.footer-container .footer-box .footer-content{
+    line-height: 2.3;
+}
+
+footer .btn1{
+    margin: 10px 25px;
+}
+
+footer h3{
+    margin: 20px 25px;
+}
